@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\bin\Debug\net7.0\valid-anagram.exe
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\bin\Debug\net7.0\valid-anagram.deps.json
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\bin\Debug\net7.0\valid-anagram.runtimeconfig.json
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\bin\Debug\net7.0\valid-anagram.dll
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\bin\Debug\net7.0\valid-anagram.pdb
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\obj\Debug\net7.0\valid-anagram.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\obj\Debug\net7.0\valid-anagram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\obj\Debug\net7.0\valid-anagram.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\obj\Debug\net7.0\valid-anagram.AssemblyInfo.cs
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\obj\Debug\net7.0\valid-anagram.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\obj\Debug\net7.0\valid-anagram.dll
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\obj\Debug\net7.0\refint\valid-anagram.dll
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\obj\Debug\net7.0\valid-anagram.pdb
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\obj\Debug\net7.0\valid-anagram.genruntimeconfig.cache
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\valid-anagram\obj\Debug\net7.0\ref\valid-anagram.dll
