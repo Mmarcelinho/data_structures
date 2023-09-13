@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\bin\Debug\net7.0\two-sum.exe
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\bin\Debug\net7.0\two-sum.deps.json
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\bin\Debug\net7.0\two-sum.runtimeconfig.json
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\bin\Debug\net7.0\two-sum.dll
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\bin\Debug\net7.0\two-sum.pdb
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\obj\Debug\net7.0\two-sum.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\obj\Debug\net7.0\two-sum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\obj\Debug\net7.0\two-sum.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\obj\Debug\net7.0\two-sum.AssemblyInfo.cs
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\obj\Debug\net7.0\two-sum.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\obj\Debug\net7.0\two-sum.dll
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\obj\Debug\net7.0\refint\two-sum.dll
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\obj\Debug\net7.0\two-sum.pdb
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\obj\Debug\net7.0\two-sum.genruntimeconfig.cache
+C:\Users\user\Desktop\Projetos\DataStructures\Array-&-Hashing\csharp\two-sum\obj\Debug\net7.0\ref\two-sum.dll
