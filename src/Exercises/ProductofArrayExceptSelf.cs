@@ -1,8 +1,7 @@
 ﻿namespace Exercises;
 public class ProductExceptSelf
 {
-    static void Main()
-    { }
+   
     public int[] CalculateProductExceptSelf(int[] inputNumbers)
     {
         int prefixProduct = 1, postfixProduct = 1;
@@ -28,7 +27,6 @@ public class ProductExceptSelf
 // Para fazer isso, usamos duas variáveis: prefixProduct e postfixProduct, inicializadas com o valor 1.
 // Também criamos um array de resultados chamado "result" com o mesmo tamanho que o array de entrada "inputNumbers".
 
-// Primeira fase: Cálculo do prefixo
 // Inicializamos prefixProduct como 1.
 // Em um loop for, percorremos o array "inputNumbers" e, em cada iteração:
 //   - Atribuímos o valor atual de prefixProduct ao elemento correspondente em "result".
@@ -38,7 +36,6 @@ public class ProductExceptSelf
 // Exemplo passo a passo:
 // inputNumbers[1, 2, 3, 4]  result[1, 1, 2, 6]
 
-// Segunda fase: Cálculo do sufixo
 // Agora, calculamos o produto à direita de cada elemento.
 // Iniciamos postfixProduct como 1 e percorremos o array "result" de trás para frente (do último elemento ao primeiro).
 // Em cada iteração:
