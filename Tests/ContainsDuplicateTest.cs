@@ -7,11 +7,11 @@ namespace Tests;
         public void ContainsDuplicate_ReturnsTrue_WhenDuplicatesExist()
         {
             // Arrange
-            var duplicateChecker = new ContainsDuplicate();
+            var ContainsDuplicate = new ContainsDuplicate();
             int[] numbers = { 1, 2, 3, 4, 2, 5 };
 
             // Act
-            bool result = duplicateChecker.containsDuplicate(numbers);
+            bool result = ContainsDuplicate.containsDuplicate(numbers);
 
             // Assert
             Assert.True(result);
@@ -21,11 +21,11 @@ namespace Tests;
         public void ContainsDuplicate_ReturnsFalse_WhenNoDuplicatesExist()
         {
             // Arrange
-            var duplicateChecker = new ContainsDuplicate();
+            var ContainsDuplicate = new ContainsDuplicate();
             int[] numbers = { 1, 2, 3, 4, 5 };
 
             // Act
-            bool result = duplicateChecker.containsDuplicate(numbers);
+            bool result = ContainsDuplicate.containsDuplicate(numbers);
 
             // Assert
             Assert.False(result);

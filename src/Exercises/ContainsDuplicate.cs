@@ -5,20 +5,27 @@
 
         public bool containsDuplicate(int[] numbers)
         {
+            // Cria um HashSet para armazenar números únicos.
             HashSet<int> uniqueNumbers = new HashSet<int>();
+
+            // Percorre os elementos na coleção "numbers" um por um.
             foreach (int number in numbers)
             {
-                if (uniqueNumbers.Contains(number)) return true;
+                // Verifica se o número já existe no HashSet.
+                if (uniqueNumbers.Contains(number))
+                {
+                    // Se o número já existe, há um número duplicado, então retorna "true".
+                    return true;
+                }
+
+                // Caso contrário, adiciona o número ao HashSet.
                 uniqueNumbers.Add(number);
             }
+
+            // Se não houver números duplicados em toda a coleção, o loop termina e o método retorna "false".
             return false;
         }
 
-        // Este código utiliza um HashSet para armazenar elementos únicos.
-        // Ele percorre os elementos na coleção "numbers" um por um na ordem em que aparecem.
-        // Para cada elemento, verifica se já existe no HashSet.
-        // Se o elemento já estiver presente, isso significa que há um número duplicado e retorna "true".
-        // Caso contrário, adiciona o elemento ao HashSet.
-        // Se não houver números duplicados em toda a coleção, o loop termina e o método retorna "false".
+        // Este código utiliza um HashSet para eficientemente verificar a presença de duplicatas em um array de inteiros.
     }
 }

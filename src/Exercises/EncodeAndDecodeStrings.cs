@@ -2,8 +2,7 @@
 
 public class EncodeAndDecodeStrings
 {
-    static void Main()
-    {}
+    
     public string Encode(List<string> strings)
     {
         // Inicialmente, declaramos um método chamado "Encode" que recebe uma lista de strings como entrada.

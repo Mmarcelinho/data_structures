@@ -1,55 +1,39 @@
-﻿namespace Exercises;
-public class ProductExceptSelf
+﻿namespace Exercises
 {
-   
-    public int[] CalculateProductExceptSelf(int[] inputNumbers)
+    public class ProductExceptSelf
     {
-        int prefixProduct = 1, postfixProduct = 1;
-        int[] result = new int[inputNumbers.Length];
-
-        for (int i = 0; i < inputNumbers.Length; i++)
+        public int[] CalculateProductExceptSelf(int[] inputNumbers)
         {
-            result[i] = prefixProduct;
-            prefixProduct *= inputNumbers[i];
-        }
+            // Variáveis para armazenar produtos à esquerda e à direita do elemento atual
+            int prefixProduct = 1, postfixProduct = 1;
 
-        for (int i = inputNumbers.Length - 1; i >= 0; i--)
-        {
-            result[i] *= postfixProduct;
-            postfixProduct *= inputNumbers[i];
-        }
+            // Array para armazenar os resultados finais
+            int[] result = new int[inputNumbers.Length];
 
-        return result;
+            // Etapa 1: Calcular produtos à esquerda de cada elemento
+            for (int i = 0; i < inputNumbers.Length; i++)
+            {
+                // Atribuir o valor atual de prefixProduct ao elemento correspondente em "result"
+                result[i] = prefixProduct;
+
+                // Multiplicar prefixProduct pelo elemento atual em "inputNumbers"
+                prefixProduct *= inputNumbers[i];
+            }
+
+            // Etapa 2: Calcular produtos à direita de cada elemento e combiná-los com produtos à esquerda
+            for (int i = inputNumbers.Length - 1; i >= 0; i--)
+            {
+                // Multiplicar o elemento atual em "result" pelo valor atual de postfixProduct
+                result[i] *= postfixProduct;
+
+                // Atualizar postfixProduct multiplicando-o pelo elemento correspondente em "inputNumbers"
+                postfixProduct *= inputNumbers[i];
+            }
+
+            // O array "result" agora contém os produtos de todos os elementos em "inputNumbers"
+            // exceto o elemento na posição atual.
+
+            return result;
+        }
     }
 }
-
-// Este algoritmo calcula o produto de todos os elementos em um array de entrada, exceto o elemento na posição atual.
-// Para fazer isso, usamos duas variáveis: prefixProduct e postfixProduct, inicializadas com o valor 1.
-// Também criamos um array de resultados chamado "result" com o mesmo tamanho que o array de entrada "inputNumbers".
-
-// Inicializamos prefixProduct como 1.
-// Em um loop for, percorremos o array "inputNumbers" e, em cada iteração:
-//   - Atribuímos o valor atual de prefixProduct ao elemento correspondente em "result".
-//   - Multiplicamos prefixProduct pelo elemento atual em "inputNumbers".
-// Isso resulta em um array "result" que contém os produtos à esquerda de cada elemento em "inputNumbers".
-
-// Exemplo passo a passo:
-// inputNumbers[1, 2, 3, 4]  result[1, 1, 2, 6]
-
-// Agora, calculamos o produto à direita de cada elemento.
-// Iniciamos postfixProduct como 1 e percorremos o array "result" de trás para frente (do último elemento ao primeiro).
-// Em cada iteração:
-//   - Multiplicamos o elemento atual em "result" pelo valor atual de postfixProduct.
-//   - Atualizamos postfixProduct multiplicando-o pelo elemento correspondente em "inputNumbers".
-// Isso resulta em um array "result" que contém os produtos à esquerda e à direita de cada elemento em "inputNumbers".
-
-// Exemplo passo a passo:
-// [1] [1] [2] [6] * postfixProduct = 1  postfixProduct = 1 * inputNumbers[i] = 4
-// [1] [1] [2] * postfixProduct = 4  [6]  postfixProduct = 4 * inputNumbers[i] = 3
-// [1] [1] * postfixProduct = 12 [8] [6]  postfixProduct = 12 * inputNumbers[i] = 2
-// [1] * postfixProduct = 24 [12] [8] [6]  postfixProduct = 24 * inputNumbers[i] = 1
-
-// O resultado final é um array "result" que contém os produtos de todos os elementos em "inputNumbers" exceto o elemento na posição atual.
-
-// Exemplo final:
-// [24] [12] [8] [6]

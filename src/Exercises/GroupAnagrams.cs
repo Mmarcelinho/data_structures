@@ -2,54 +2,40 @@
 
 public class GroupAnagrams
 {
-   
+    // Método para agrupar palavras anagramas em uma lista de listas.
     public IList<IList<string>> groupAnagrams(string[] words)
     {
+        // Um dicionário para mapear a representação única das letras de cada palavra para suas anagramas.
         var anagramGroups = new Dictionary<string, IList<string>>();
 
+        // Iterando através de todas as palavras na lista de entrada.
         foreach (string word in words)
         {
+            // Um vetor para contar quantas vezes cada letra aparece na palavra.
             char[] characterCounts = new char[26];
+
+            // Iterando através de cada caractere na palavra.
             foreach (char character in word)
             {
+                // Calculando o índice no vetor com base no caractere ('a' é subtraído do caractere atual).
                 characterCounts[character - 'a']++;
             }
 
+            // Gerando uma chave única com base na contagem de letras da palavra.
             string key = new string(characterCounts);
+
+            // Verificando se a chave não existe no dicionário.
             if (!anagramGroups.ContainsKey(key))
             {
+                // Se não existir, criamos uma nova entrada no dicionário.
                 anagramGroups[key] = new List<string>();
             }
+
+            // Adicionando a palavra atual à lista correspondente à chave no dicionário.
             anagramGroups[key].Add(word);
         }
 
+        // Retornando os valores do dicionário como uma lista de listas de palavras anagramas.
         return anagramGroups.Values.ToList();
     }
-
-
 }
-
-// Este código cria um dicionário onde a chave é uma representação única das letras de cada palavra,
-// e o valor é uma lista de palavras que são anagramas umas das outras, ou seja, têm as mesmas letras
-// em diferentes ordens.
-
-// Iniciamos percorrendo cada palavra na lista de entrada.
-// Para cada palavra, criamos um vetor chamado characterCounts para contar quantas vezes cada letra
-// aparece, considerando as letras de 'a' a 'z'.
-
-// Em seguida, percorremos os caracteres da palavra e subtraímos o código ASCII do caractere 'a' para
-// determinar o índice no vetor characterCounts onde devemos incrementar. Isso nos permite contar
-// quantas vezes cada letra aparece na palavra.
-
-// Por exemplo, para a letra 'e', a diferença c - 'a' é igual a 4, então incrementamos characterCounts[4] em 1.
-// Isso nos dá uma representação única para cada palavra baseada na contagem de letras.
-
-// À medida que percorremos as palavras, criamos uma chave usando a representação única (characterCounts)
-// da primeira palavra. Verificamos se o dicionário (anagramGroups) já possui essa chave. Se não existir,
-// criamos uma nova entrada no dicionário com a chave e uma lista vazia como valor.
-
-// Em seguida, adicionamos a palavra atual à lista correspondente à chave no dicionário.
-// Isso agrupa palavras que são anagramas sob a mesma chave.
-
-// Finalmente, retornamos os valores do dicionário anagramGroups como uma lista de listas de palavras,
-// onde cada lista contém palavras que são anagramas umas das outras.
