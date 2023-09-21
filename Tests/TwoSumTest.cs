@@ -1,6 +1,4 @@
-﻿using Exercises;
-
-namespace Tests;
+﻿namespace Tests;
 
     public class TwoSumTest
     {

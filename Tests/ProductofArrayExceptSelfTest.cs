@@ -1,5 +1,5 @@
-﻿using Exercises;
-namespace Tests;
+﻿namespace Tests;
+
 
 public class ProductExceptSelfTest
 {

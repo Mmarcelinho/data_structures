@@ -1,4 +1,3 @@
-using Exercises;
 namespace Tests;
     public class LongestConsecutiveSequenceTest
     {

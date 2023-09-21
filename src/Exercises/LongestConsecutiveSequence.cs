@@ -2,8 +2,7 @@ namespace Exercises;
 
 public class LongestConsecutiveSequence
 {
-    static void Main()
-    {}
+    
     public int LongestConsecutive(int[] nums)
     {
         // Verifica se o tamanho do array é menor que 2 e retorna o tamanho se for.

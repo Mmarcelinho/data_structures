@@ -1,29 +1,26 @@
-﻿using Exercises;
+﻿namespace Tests;
 
-
-namespace Tests 
+public class EncodeAndDecodeStringsTest
 {
-    public class EncodeAndDecodeStringsTest
+    [Fact]
+    public void EncodeAndDecodeStrings_CheckingEncodingAndDecodingIsCorrect()
     {
-        [Fact]
-        public void EncodeAndDecodeStrings_CheckingEncodingAndDecodingIsCorrect()
-        {
-            //Arrange
-            var EncodeAndDecode = new EncodeAndDecodeStrings();
+        //Arrange
+        var EncodeAndDecode = new EncodeAndDecodeStrings();
 
-            var strings = new List<string> { "test", "code" };
+        var strings = new List<string> { "test", "code" };
 
-            var decodeStrings = new List<string> { "test", "code" };
+        var decodeStrings = new List<string> { "test", "code" };
 
-            var encodedStrings = "4#test4#code";
+        var encodedStrings = "4#test4#code";
 
-            //Act
-            var resultEncode = EncodeAndDecode.Encode(strings);
-            var resultDecoded = EncodeAndDecode.Decode(encodedStrings);
+        //Act
+        var resultEncode = EncodeAndDecode.Encode(strings);
+        var resultDecoded = EncodeAndDecode.Decode(encodedStrings);
 
-            //Assert
-            Assert.Equal(encodedStrings, resultEncode);
-            Assert.Equal(decodeStrings, resultDecoded);
-        }
+        //Assert
+        Assert.Equal(encodedStrings, resultEncode);
+        Assert.Equal(decodeStrings, resultDecoded);
     }
 }
+
