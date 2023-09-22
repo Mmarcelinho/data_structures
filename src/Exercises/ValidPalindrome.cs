@@ -2,8 +2,7 @@ namespace Exercises;
 
 public class ValidPalindrome
 {
-    static void Main()
-    { }
+   
     public bool IsPalindrome(string inputString)
     {
         int leftPointer = 0;
