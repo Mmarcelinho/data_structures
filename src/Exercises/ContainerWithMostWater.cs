@@ -2,9 +2,7 @@ namespace Exercises;
 
 public class ContainerWithMostWater
 {
-    static void Main()
-    { }
-    public int MaxArea(int[] height)
+       public int MaxArea(int[] height)
     {
         // Inicializando a área máxima como zero.
         int maxArea = 0;
