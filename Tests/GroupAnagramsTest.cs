@@ -7,11 +7,11 @@ public class GroupAnagramsTest
     public void GroupAnagrams_ShouldGroupCorrectly()
     {
         // Arrange
-        var groupAnagrams = new GroupAnagrams();
+        var GroupAnagrams = new GroupAnagrams();
         string[] words = { "eat", "tea", "tan", "ate", "nat", "bat" };
 
         // Act
-        IList<IList<string>> result = groupAnagrams.groupAnagrams(words);
+        IList<IList<string>> result = GroupAnagrams.GroupAnagramsInList(words);
 
         // Assert
         Assert.Equal(3, result.Count); 

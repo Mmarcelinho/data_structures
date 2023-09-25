@@ -2,8 +2,7 @@ namespace Exercises
 {
     public class StockAnalyzer
     {
-        static void Main()
-        { }
+       
 
         public int FindMaxProfit(int[] prices)
         {

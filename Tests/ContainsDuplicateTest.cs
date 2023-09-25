@@ -10,7 +10,7 @@ namespace Tests;
             int[] numbers = { 1, 2, 3, 4, 2, 5 };
 
             // Act
-            bool result = ContainsDuplicate.containsDuplicate(numbers);
+            bool result = ContainsDuplicate.HasDuplicateElements(numbers);
 
             // Assert
             Assert.True(result);
@@ -24,7 +24,7 @@ namespace Tests;
             int[] numbers = { 1, 2, 3, 4, 5 };
 
             // Act
-            bool result = ContainsDuplicate.containsDuplicate(numbers);
+            bool result = ContainsDuplicate.HasDuplicateElements(numbers);
 
             // Assert
             Assert.False(result);

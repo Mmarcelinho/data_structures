@@ -10,7 +10,7 @@ public class ThreeSumTest
         int[] nums = { -1, 0, 1, 2, -1, -4 };
 
         // Act
-        IList<IList<int>> result = ThreeSum.threeSum(nums);
+        IList<IList<int>> result = ThreeSum.ThreeNumberSum(nums);
 
         // Assert
         Assert.Contains(new List<int> { -1, -1, 2 }, result);
@@ -25,7 +25,7 @@ public class ThreeSumTest
         int[] nums = { 1, 2, 3, 4, 5 };
 
         // Act
-        IList<IList<int>> result = ThreeSum.threeSum(nums);
+        IList<IList<int>> result = ThreeSum.ThreeNumberSum(nums);
 
         // Assert
         Assert.Empty(result);
@@ -39,7 +39,7 @@ public class ThreeSumTest
         int[] nums = { -1, 0, 1, 2, -1, -4 };
 
         // Act
-        IList<IList<int>> result = ThreeSum.threeSum(nums);
+        IList<IList<int>> result = ThreeSum.ThreeNumberSum(nums);
 
         // Assert
         foreach (var triplet in result)
@@ -57,7 +57,7 @@ public class ThreeSumTest
         int[] nums = { };
 
         // Act
-        IList<IList<int>> result = ThreeSum.threeSum(nums);
+        IList<IList<int>> result = ThreeSum.ThreeNumberSum(nums);
 
         // Assert
         Assert.Empty(result);

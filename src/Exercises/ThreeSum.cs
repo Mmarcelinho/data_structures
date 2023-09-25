@@ -3,7 +3,7 @@ namespace Exercises
     public class ThreeSum
     {
        
-        public IList<IList<int>> threeSum(int[] nums)
+        public IList<IList<int>> ThreeNumberSum(int[] nums)
         {
             // Lista de listas do tipo int para armazenar os conjuntos de elementos cuja soma é igual a 0.
             List<IList<int>> result = new List<IList<int>>();

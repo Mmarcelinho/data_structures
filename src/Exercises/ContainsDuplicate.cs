@@ -3,7 +3,7 @@
     public class ContainsDuplicate
     {
 
-        public bool containsDuplicate(int[] numbers)
+        public bool HasDuplicateElements(int[] numbers)
         {
             // Cria um HashSet para armazenar números únicos.
             HashSet<int> uniqueNumbers = new HashSet<int>();

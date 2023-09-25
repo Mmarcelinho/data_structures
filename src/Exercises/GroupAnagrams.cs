@@ -3,7 +3,7 @@
 public class GroupAnagrams
 {
     // Método para agrupar palavras anagramas em uma lista de listas.
-    public IList<IList<string>> groupAnagrams(string[] words)
+    public IList<IList<string>> GroupAnagramsInList(string[] words)
     {
         // Um dicionário para mapear a representação única das letras de cada palavra para suas anagramas.
         var anagramGroups = new Dictionary<string, IList<string>>();
