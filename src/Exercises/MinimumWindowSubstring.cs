@@ -2,8 +2,6 @@ namespace Exercises
 {
     public class MinimumWindowSubstring
     {
-        static void Main()
-        { }
 
         public static string FindMinimumWindowSubstring(string s, string t)
         {
