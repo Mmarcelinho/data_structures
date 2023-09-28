@@ -3,7 +3,7 @@ namespace Exercises;
     public class CharacterReplacement
     {
 
-        static void Main(){}
+     
       public static int ReplaceCharacter(string s, int k)
         {
             int left = 0; // Ponteiro esquerdo da janela
