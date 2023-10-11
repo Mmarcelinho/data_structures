@@ -2,9 +2,7 @@ namespace Exercises;
 
 public class ValidParentheses
 {
-    static void Main()
-    { }
-
+  
     // Método para verificar se uma string contém parênteses válidos
     public bool IsValid(string s)
     {
