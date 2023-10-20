@@ -2,9 +2,7 @@ namespace Exercises;
 
     public class FindMinimumInRotatedSortedArray
     {
-        public static void Main()
-        {}
-
+       
         public static int FindMinimum(int[] nums)
         {
             int left = 0;
