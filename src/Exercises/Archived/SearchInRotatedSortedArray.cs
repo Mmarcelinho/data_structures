@@ -2,9 +2,6 @@ namespace Exercises
 {
     public class SearchInRotatedSortedArray
     {
-        public static void Main()
-        {}
-
         public static int Search(int[] nums, int target) 
         {
             int low = 0;

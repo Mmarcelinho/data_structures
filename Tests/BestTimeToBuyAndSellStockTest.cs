@@ -1,6 +1,6 @@
 namespace Tests;
 
-public class StockAnalyzerTest
+public class BestTimeToBuyAndSellStockTest
 {
     [Fact]
     public void StockAnalyzer_ShouldReturnMaximumProfit()
