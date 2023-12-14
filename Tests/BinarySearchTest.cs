@@ -16,6 +16,7 @@ namespace Tests;
             //Assert
             Assert.Equal(4, result);
         }
+        
         [Fact]
          public void BinarySearch_shouldReturnNegativeValueIfTargetIsNotInArray(){
 
