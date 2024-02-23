@@ -2,13 +2,13 @@ namespace DataStructures.Exercises.MySolutions;
 
     public class ValidAnagram
     {
-        static void Main()
-        {
-            var s = "bat";
-            var t = "tab";
-            var anagram = new ValidAnagram();
-            anagram.AreAnagrams(s,t);
-        }
+        // static void Main()
+        // {
+        //     var s = "bat";
+        //     var t = "tab";
+        //     var anagram = new ValidAnagram();
+        //     anagram.AreAnagrams(s,t);
+        // }
         public bool AreAnagrams(string s, string t) {
         if(s.Length != t.Length) return false;
         if(s == t) return true;
