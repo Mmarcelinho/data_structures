@@ -4,12 +4,12 @@ namespace DataStructures.Exercises.MySolutions;
 
 public class ValidPalindrome
 {
-    static void Main()
-    {
-        string s = "race a car";
-        var ValidPalindrome = new ValidPalindrome();
-        ValidPalindrome.IsPalindrome(s);
-    }
+    // static void Main()
+    // {
+    //     string s = "race a car";
+    //     var ValidPalindrome = new ValidPalindrome();
+    //     ValidPalindrome.IsPalindrome(s);
+    // }
     public bool IsPalindrome(string s)
     {
         List<char> sCharList = new();
