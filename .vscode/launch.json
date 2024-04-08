@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/DataStructures.Exercises/bin/Debug/net8.0/DataStructures.Exercises.dll",
+            "program": "${workspaceFolder}/dsa_study/src/dsa_study/bin/Debug/net8.0/dsa_study.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/DataStructures.Exercises",
+            "cwd": "${workspaceFolder}/dsa_study/src/dsa_study",
             "console": "internalConsole",
             "stopAtEntry": false
         },

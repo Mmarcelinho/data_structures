@@ -2,12 +2,12 @@ namespace DataStructures.Exercises.MySolutions;
 
     public class BestTimeToBuyAndSellStock
     {
-        static void Main()
-        {
-            int[] prices = { 7,6,4,3,1 };
-            var BestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
-            BestTimeToBuyAndSellStock.FindMaxProfit(prices);
-        }
+        // static void Main()
+        // {
+        //     int[] prices = { 7,6,4,3,1 };
+        //     var BestTimeToBuyAndSellStock = new BestTimeToBuyAndSellStock();
+        //     BestTimeToBuyAndSellStock.FindMaxProfit(prices);
+        // }
          public int FindMaxProfit(int[] prices)
         {
             var Max = 0;

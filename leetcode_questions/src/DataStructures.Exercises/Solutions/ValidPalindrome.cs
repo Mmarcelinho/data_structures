@@ -1,4 +1,4 @@
-namespace Exercises;
+namespace DataStructures.Exercises;
 
 public class ValidPalindrome
 {
