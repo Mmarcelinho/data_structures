@@ -3,13 +3,13 @@ namespace dsa_study.dp;
 public class MaxSubArraySum
 {
     // Ponto de entrada principal para testar o método maxSubArraySum.
-    static void Main()
-    {
-        // Define um array de exemplo para teste.
-        int[] array = { 4, 3, -2, 6, -12, 7, -1, 6 };
-        // Imprime o resultado da soma máxima do subarray.
-        Console.WriteLine(maxSubArraySum(array));  
-    }
+    // static void Main()
+    // {
+    //     // Define um array de exemplo para teste.
+    //     int[] array = { 4, 3, -2, 6, -12, 7, -1, 6 };
+    //     // Imprime o resultado da soma máxima do subarray.
+    //     Console.WriteLine(maxSubArraySum(array));  
+    // }
     
     // Calcula a soma máxima de qualquer subarray contíguo dentro de um array dado.
     public static int maxSubArraySum(int[] array)

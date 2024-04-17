@@ -4,17 +4,17 @@ namespace dsa_study.graph;
 
     public class AdjListGraph
     {
-        static void Main()
-        {
-            AdjListGraph g = new AdjListGraph(5);
-            g.AddEdge(0, 1);
-            g.AddEdge(1, 2);
-            g.AddEdge(2, 3);
-            g.AddEdge(3, 0);
+        // static void Main()
+        // {
+        //     AdjListGraph g = new AdjListGraph(5);
+        //     g.AddEdge(0, 1);
+        //     g.AddEdge(1, 2);
+        //     g.AddEdge(2, 3);
+        //     g.AddEdge(3, 0);
 
-            Console.WriteLine(g);
-            g.Dfs();
-        }
+        //     Console.WriteLine(g);
+        //     g.Dfs();
+        // }
 
         // Array de listas para armazenar a lista de adjacência de cada vértice
         private List<int>[] _adj;
