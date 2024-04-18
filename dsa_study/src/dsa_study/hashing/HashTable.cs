@@ -1,10 +1,22 @@
-using System;
-
 namespace HashingExample
 {
+
     // Definição da classe HashTable, que implementa uma tabela hash com encadeamento para resolver colisões.
     public class HashTable
     {
+        // Método principal para demonstrar o uso da HashTable.
+        // public static void Main(string[] args)
+        // {
+        //     HashTable table = new HashTable(10); // Cria uma tabela hash com capacidade para 10 elementos.
+        //     table.Put(105, "Tom"); // Adiciona elementos à tabela.
+        //     table.Put(21, "Harry");
+        //     table.Put(31, "Dinesh");
+        //     Console.WriteLine(table.Size()); // Exibe o tamanho da tabela hash.
+        //     Console.WriteLine(table.Remove(21)); // Remove elementos e exibe o valor removido.
+        //     Console.WriteLine(table.Remove(31));
+        //     Console.WriteLine(table.Size()); // Exibe o tamanho atualizado da tabela hash.
+        // }
+
         private HashNode[] buckets; // Array de listas encadeadas que armazenam os nós hash.
         private int numOfBuckets; // Número total de buckets na tabela hash.
         private int size; // Contador do número de pares chave-valor presentes na tabela hash.
@@ -124,19 +136,6 @@ namespace HashingExample
                 buckets[bucketIndex] = head.Next;
             }
             return head.Value;
-        }
-
-        // Método principal para demonstrar o uso da HashTable.
-        public static void Main(string[] args)
-        {
-            HashTable table = new HashTable(10); // Cria uma tabela hash com capacidade para 10 elementos.
-            table.Put(105, "Tom"); // Adiciona elementos à tabela.
-            table.Put(21, "Harry");
-            table.Put(31, "Dinesh");
-            Console.WriteLine(table.Size()); // Exibe o tamanho da tabela hash.
-            Console.WriteLine(table.Remove(21)); // Remove elementos e exibe o valor removido.
-            Console.WriteLine(table.Remove(31));
-            Console.WriteLine(table.Size()); // Exibe o tamanho atualizado da tabela hash.
         }
     }
 }
