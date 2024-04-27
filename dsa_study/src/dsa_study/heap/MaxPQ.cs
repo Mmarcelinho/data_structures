@@ -2,22 +2,22 @@ namespace dsa_study.heap;
 
 public class MaxPQ
 {
-    static void Main()
-    {
-        // Cria uma instância da fila de prioridade com capacidade inicial de 3.
-        MaxPQ pq = new(3);
-        // Insere elementos na fila.
-        pq.insert(5);
-        pq.insert(2);
-        pq.insert(6);
-        pq.insert(1);
-        pq.insert(3);
+    // static void Main()
+    // {
+    //     // Cria uma instância da fila de prioridade com capacidade inicial de 3.
+    //     MaxPQ pq = new(3);
+    //     // Insere elementos na fila.
+    //     pq.insert(5);
+    //     pq.insert(2);
+    //     pq.insert(6);
+    //     pq.insert(1);
+    //     pq.insert(3);
 
-        // Exibe o tamanho atual da fila.
-        Console.WriteLine(pq.size());
-        // Imprime os elementos do heap em ordem.
-        pq.printMaxHeap();
-    }
+    //     // Exibe o tamanho atual da fila.
+    //     Console.WriteLine(pq.size());
+    //     // Imprime os elementos do heap em ordem.
+    //     pq.printMaxHeap();
+    // }
 
     // Array para armazenar os elementos do heap.
     private int[] heap;
