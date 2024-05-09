@@ -1,24 +1,21 @@
-using System;
-
 namespace dsa_study.list
 {
     public class DoublyLinkedList
     {
-        // Método principal para testar a classe DoublyLinkedList
-        static void Main()
-        {
-            DoublyLinkedList dll = new DoublyLinkedList();
-            dll.insertEnd(1);
-            dll.insertEnd(2);
-            dll.insertEnd(3);
+        // static void Main()
+        // {
+        //     DoublyLinkedList dll = new DoublyLinkedList();
+        //     dll.insertEnd(1);
+        //     dll.insertEnd(2);
+        //     dll.insertEnd(3);
 
-            dll.displayForward();
+        //     dll.displayForward();
 
-            dll.deleteLast();
-            dll.deleteLast();
+        //     dll.deleteLast();
+        //     dll.deleteLast();
 
-            dll.displayForward();
-        }
+        //     dll.displayForward();
+        // }
         
         // Ponteiro para o primeiro nó da lista
         private ListNode head;

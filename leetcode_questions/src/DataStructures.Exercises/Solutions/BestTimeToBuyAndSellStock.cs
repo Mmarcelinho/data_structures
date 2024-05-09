@@ -1,5 +1,4 @@
-namespace DataStructures.Exercises;
-
+namespace DataStructures.Exercises.Solutions;
     public class StockAnalyzer
     {
         public int FindMaxProfit(int[] prices)

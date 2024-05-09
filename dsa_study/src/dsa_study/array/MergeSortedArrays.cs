@@ -2,7 +2,6 @@ namespace dsa_study.array;
 
 public class MergeSortedArrays
 {
-    // Método principal para testar a mesclagem de dois arrays ordenados.
     // static void Main()
     // {
     //     MergeSortedArrays msa = new ();

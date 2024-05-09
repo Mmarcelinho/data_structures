@@ -2,7 +2,6 @@ namespace dsa_study.list;
 
 public class CircularLinkedList
 {
-    // Método principal que cria uma lista circular e a exibe
     // static void Main()
     // {
     //     CircularLinkedList cll = new();

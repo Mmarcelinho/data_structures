@@ -2,7 +2,6 @@ namespace dsa_study.dp;
 
 public class MaxSubArraySum
 {
-    // Ponto de entrada principal para testar o método maxSubArraySum.
     // static void Main()
     // {
     //     // Define um array de exemplo para teste.

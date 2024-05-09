@@ -1,5 +1,4 @@
-namespace DataStructures.Exercises;
-
+namespace DataStructures.Exercises.Solutions;
     public class ReverseLinkedList
     {
         public class ListNode

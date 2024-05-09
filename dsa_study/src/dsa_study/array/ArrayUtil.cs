@@ -2,14 +2,11 @@ namespace dsa_study.array;
 
 public class ArrayUtil
 {
-    // Método principal que pode ser usado para testar a classe ArrayUtil.
     // static void Main()
     // {
     //     ArrayUtil arrayUtil = new();
     //     arrayUtil.arrayDemo();
     // }
-
-    #region demo
 
     // Demonstra o uso de um método específico da classe para encontrar o número faltante em um array.
     public void arrayDemo()
@@ -29,8 +26,6 @@ public class ArrayUtil
         }
         Console.WriteLine();
     }
-
-    #endregion
 
     // Encontra e retorna o menor valor em um array.
     public int findMinimum(int[] array)

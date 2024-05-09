@@ -2,16 +2,16 @@ namespace dsa_study.matrix;
 
     public class SpiralMatrix
     {
-        static void Main()
-        {
-            int[][] matrix = {
-                new int[] { 1, 2, 3, 4 },
-                new int[] { 5, 6, 7, 8 },
-                new int[] { 9, 10, 11, 12 },
-                new int[] { 13, 14, 15, 16 }
-            };
-            spiralPrint(matrix, matrix.Length, matrix[0].Length);
-        }
+        // static void Main()
+        // {
+        //     int[][] matrix = {
+        //         new int[] { 1, 2, 3, 4 },
+        //         new int[] { 5, 6, 7, 8 },
+        //         new int[] { 9, 10, 11, 12 },
+        //         new int[] { 13, 14, 15, 16 }
+        //     };
+        //     spiralPrint(matrix, matrix.Length, matrix[0].Length);
+        // }
 
         public static void spiralPrint(int[][] matrix, int r, int c)
         {

@@ -1,4 +1,4 @@
-namespace DataStructures.Exercises;
+namespace DataStructures.Exercises.Solutions;
 
 public class ValidParentheses
 {

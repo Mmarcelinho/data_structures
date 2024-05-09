@@ -1,6 +1,5 @@
 namespace dsa_study.mathematics;
 
-    // Define uma classe pública chamada RemoveEvenInteger
     public class RemoveEvenInteger
     {
         // static void Main()

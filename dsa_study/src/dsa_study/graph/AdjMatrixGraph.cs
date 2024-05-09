@@ -4,7 +4,6 @@ namespace dsa_study.graph;
 
 public class AdjMatrixGraph
 {
-    // Método principal para testar a classe AdjMatrixGraph.
     // static void Main()
     // {
     //     AdjMatrixGraph g = new(4); // Cria um grafo com 4 vértices.

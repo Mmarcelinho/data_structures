@@ -4,7 +4,6 @@ public class SortedMatrix
 {
     // static void Main()
     // {
-    //     // Definimos uma matriz ordenada onde cada linha representa uma sequência crescente de números.
     //     int[][] matrix = {
     //         new int[] { 10, 20, 30, 40 },
     //         new int[] { 15, 25, 35, 45 },
@@ -12,11 +11,8 @@ public class SortedMatrix
     //         new int[] { 32, 33, 39, 51 }
     //     };
 
-    //     // Criamos uma instância da nossa classe para usar o método de busca.
     //     SortedMatrix sm = new();
-    //     // Procuramos o número 32 na matriz.
     //     sm.Search(matrix, matrix.Length, 32);
-    //     // Tentamos encontrar o número 100, que não está presente na matriz.
     //     sm.Search(matrix, matrix.Length, 100);
     // }
 

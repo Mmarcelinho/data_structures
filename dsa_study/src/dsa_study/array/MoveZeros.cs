@@ -2,20 +2,18 @@ namespace dsa_study.array;
 
 public class MoveZeros
 {
-    // Método principal para executar demonstrações de funcionalidades da classe.
     // static void Main()
     // {
     //     MoveZeros moveZeros = new();
     //     moveZeros.arrayDemo();
     // }
 
-    // Método para demonstrar a funcionalidade de mover zeros para o fim de um array.
     public void arrayDemo()
     {
         int[] array = { 8, 1, 0, 2, 1, 0, 3 };
-        printArray(array); // Imprime o array antes da operação
-        moveZeros(array, array.Length); // Executa o método para mover zeros
-        printArray(array); // Imprime o array após mover os zeros
+        printArray(array);
+        moveZeros(array, array.Length);
+        printArray(array); 
     }
 
     // Imprime todos os elementos de um array, separados por espaço.

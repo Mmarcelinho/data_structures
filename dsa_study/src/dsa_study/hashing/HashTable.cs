@@ -4,7 +4,6 @@ namespace HashingExample
     // Definição da classe HashTable, que implementa uma tabela hash com encadeamento para resolver colisões.
     public class HashTable
     {
-        // Método principal para demonstrar o uso da HashTable.
         // public static void Main(string[] args)
         // {
         //     HashTable table = new HashTable(10); // Cria uma tabela hash com capacidade para 10 elementos.
