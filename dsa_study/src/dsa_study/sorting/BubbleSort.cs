@@ -2,16 +2,16 @@ namespace dsa_study.sorting;
 
     public class BubbleSort
     {
-        static void Main()
-        {
-            int[] arr = new int[] { 5, 1, 2, 9, 10 };
+        // static void Main()
+        // {
+        //     int[] arr = [5, 1, 2, 9, 10];
 
-            BubbleSort bs = new();
+        //     BubbleSort bs = new();
 
-            bs.printArray(arr);
-            bs.sort(arr);
-            bs.printArray(arr);
-        }
+        //     bs.printArray(arr);
+        //     bs.sort(arr);
+        //     bs.printArray(arr);
+        // }
 
         public void printArray(int[] arr)
         {
