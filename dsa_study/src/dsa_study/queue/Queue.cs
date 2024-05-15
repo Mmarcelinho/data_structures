@@ -3,22 +3,22 @@ namespace dsa_study.queue;
 public class Queue
 {
 
-    static void Main()
-    {
+    // static void Main()
+    // {
 
-        Queue queue = new();
+    //     Queue queue = new();
         
-        queue.enqueue(10);
-        queue.enqueue(15);
-        queue.enqueue(20);
+    //     queue.enqueue(10);
+    //     queue.enqueue(15);
+    //     queue.enqueue(20);
 
-        queue.print();
+    //     queue.print();
 
-        queue.dequeue();
-        queue.dequeue();
+    //     queue.dequeue();
+    //     queue.dequeue();
 
-        queue.print();
-    }
+    //     queue.print();
+    // }
 
     public class ListNode
     {
