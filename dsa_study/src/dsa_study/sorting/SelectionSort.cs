@@ -2,16 +2,16 @@ namespace dsa_study.sorting;
 
 public class SelectionSort
 {
-    static void Main()
-    {
-        int[] arr = new int[] { 5, 1, 2, 9, 10 };
+    // static void Main()
+    // {
+    //     int[] arr = new int[] { 5, 1, 2, 9, 10 };
 
-        SelectionSort ss = new();
+    //     SelectionSort ss = new();
 
-        ss.printArray(arr);
-        ss.sort(arr);
-        ss.printArray(arr);
-    }
+    //     ss.printArray(arr);
+    //     ss.sort(arr);
+    //     ss.printArray(arr);
+    // }
 
     public void printArray(int[] arr)
     {
