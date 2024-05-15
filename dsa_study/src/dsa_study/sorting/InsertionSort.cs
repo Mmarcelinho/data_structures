@@ -2,15 +2,15 @@ namespace dsa_study.sorting;
 
     public class InsertionSort
     {
-        static void Main()
-        {
-            int[] arr = new int[] { 5, 1, 2, 9, 10 };
-            InsertionSort Is = new();
+        // static void Main()
+        // {
+        //     int[] arr = new int[] { 5, 1, 2, 9, 10 };
+        //     InsertionSort Is = new();
 
-            Is.printArray(arr);
-            Is.sort(arr);
-            Is.printArray(arr);
-        }
+        //     Is.printArray(arr);
+        //     Is.sort(arr);
+        //     Is.printArray(arr);
+        // }
 
         public void printArray(int[] arr)
         {
