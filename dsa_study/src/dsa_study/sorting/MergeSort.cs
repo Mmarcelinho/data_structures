@@ -2,14 +2,14 @@ namespace dsa_study.sorting;
 
 public class MergeSort
 {
-    static void Main()
-    {
-        int[] arr = [9, 5, 2, 4, 3, -1];
+    // static void Main()
+    // {
+    //     int[] arr = [9, 5, 2, 4, 3, -1];
         
-        MergeSort ms = new();
-        ms.sort(arr, new int[arr.Length], 0, arr.Length - 1);
-        ms.printArray(arr);
-    }
+    //     MergeSort ms = new();
+    //     ms.sort(arr, new int[arr.Length], 0, arr.Length - 1);
+    //     ms.printArray(arr);
+    // }
     
     public void printArray(int[] arr)
     {
