@@ -2,12 +2,12 @@ namespace dsa_study.search;
 
 public class LinearSearch
 {
-    static void Main()
-    {
-        int[] arr = { 5, 1, 9, 2, 10, 15, 20 };
-        LinearSearch ls = new();
-        Console.WriteLine(ls.search(arr, arr.Length, 9));
-    }
+    // static void Main()
+    // {
+    //     int[] arr = { 5, 1, 9, 2, 10, 15, 20 };
+    //     LinearSearch ls = new();
+    //     Console.WriteLine(ls.search(arr, arr.Length, 9));
+    // }
 
     public int search(int[] arr, int n, int x)
     {
