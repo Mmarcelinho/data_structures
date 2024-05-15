@@ -2,12 +2,12 @@ namespace dsa_study.search;
 
 public class BinarySearch
 {
-    static void Main()
-    {
-        BinarySearch bs = new();
-        int[] nums = { 1, 10, 20, 47, 59, 65, 75, 88, 99 };
-        Console.WriteLine(bs.binarySearch(nums, 65));
-    }
+    // static void Main()
+    // {
+    //     BinarySearch bs = new();
+    //     int[] nums = { 1, 10, 20, 47, 59, 65, 75, 88, 99 };
+    //     Console.WriteLine(bs.binarySearch(nums, 65));
+    // }
 
     public int binarySearch(int[] nums, int key)
     {
