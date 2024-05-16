@@ -2,33 +2,33 @@ namespace dsa_study.stack.impl.list;
 
 public class Stack
 {
-    static void Main()
-    {
-        Stack stack = new();
+    // static void Main()
+    // {
+    //     Stack stack = new();
 
-        stack.push(10);
-        stack.push(15);
-        stack.push(20);
+    //     stack.push(10);
+    //     stack.push(15);
+    //     stack.push(20);
 
-        Console.WriteLine(stack.peek());
-        stack.pop();
+    //     Console.WriteLine(stack.peek());
+    //     stack.pop();
 
-        Console.WriteLine(stack.peek());
-        stack.pop();
+    //     Console.WriteLine(stack.peek());
+    //     stack.pop();
 
-        Console.WriteLine(stack.peek());
-        stack.pop();
+    //     Console.WriteLine(stack.peek());
+    //     stack.pop();
 
-        // Tenta remover um elemento de uma pilha vazia, o que causará uma exceção
-        try
-        {
-            stack.pop();
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e.Message);
-        }
-    }
+    //     // Tenta remover um elemento de uma pilha vazia, o que causará uma exceção
+    //     try
+    //     {
+    //         stack.pop();
+    //     }
+    //     catch (Exception e)
+    //     {
+    //         Console.WriteLine(e.Message);
+    //     }
+    // }
 
     // A classe Stack tem duas propriedades: top e _length.
     // 'top' é um nó que aponta para o topo da pilha.
