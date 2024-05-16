@@ -2,27 +2,34 @@ namespace dsa_study.stack.impl.array;
 
 public class Stack
 {
-    static void Main()
-    {
-        Stack stack = new(3);
+    // static void Main()
+    // {
+    //     Stack stack = new(3);
 
-        stack.push(10);
-        stack.push(15);
-        stack.push(20);
+    //     stack.push(10);
+    //     stack.push(15);
+    //     stack.push(20);
 
-        Console.WriteLine(stack.peek());
-        stack.pop();
+    //     Console.WriteLine(stack.peek());
+    //     stack.pop();
 
-        Console.WriteLine(stack.peek());
-        stack.pop();
+    //     Console.WriteLine(stack.peek());
+    //     stack.pop();
 
-        Console.WriteLine(stack.peek());
-        stack.pop();
+    //     Console.WriteLine(stack.peek());
+    //     stack.pop();
 
-        // Tenta remover um elemento de uma pilha vazia, o que causará uma exceção
-        stack.pop();
-    }
-    
+    //     Tenta remover um elemento de uma pilha vazia, o que causará uma exceção
+    //     try
+    //     {
+    //         stack.pop();
+    //     }
+    //     catch (Exception e)
+    //     {
+    //         Console.WriteLine(e.Message);
+    //     }
+    // }
+
     // Variáveis de instância para armazenar o topo da pilha e o array que representa a pilha
     public int top;
     public int[] arr;
