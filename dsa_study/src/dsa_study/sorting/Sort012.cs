@@ -2,17 +2,16 @@ namespace dsa_study.sorting;
 
 public class Sort012
 {
-    // Ponto de entrada do programa
-    static void Main()
-    {
-        int[] arr = new int[] { 2, 0, 0, 1, 0, 2, 0, 1, 0, 2, 2, 0 };
+    // static void Main()
+    // {
+    //     int[] arr = new int[] { 2, 0, 0, 1, 0, 2, 0, 1, 0, 2, 2, 0 };
 
-        Sort012 st = new();
+    //     Sort012 st = new();
 
-        st.printArray(arr);
-        st.threeNumberSort(arr);
-        st.printArray(arr);
-    }
+    //     st.printArray(arr);
+    //     st.threeNumberSort(arr);
+    //     st.printArray(arr);
+    // }
     
     public void printArray(int[] arr)
     {
