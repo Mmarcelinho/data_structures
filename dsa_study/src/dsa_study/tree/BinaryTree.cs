@@ -2,12 +2,12 @@ namespace dsa_study.tree;
 
 public class BinaryTree
 {
-    static void Main()
-    {
-        BinaryTree bt = new();
-        bt.createBinaryTree();
-        bt.postOrder();
-    }
+    // static void Main()
+    // {
+    //     BinaryTree bt = new();
+    //     bt.createBinaryTree();
+    //     bt.postOrder();
+    // }
 
     // Nó raiz da árvore
     public TreeNode root;
