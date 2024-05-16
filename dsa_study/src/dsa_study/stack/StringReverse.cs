@@ -2,12 +2,12 @@ namespace dsa_study.stack;
 
 public class StringReverse
 {
-    static void Main()
-    {
-        String str = "ABCD";
-        Console.WriteLine($"Before reverse - {str}");
-        Console.WriteLine($"After reverse - " + reverse(str));
-    }
+    // static void Main()
+    // {
+    //     String str = "ABCD";
+    //     Console.WriteLine($"Before reverse - {str}");
+    //     Console.WriteLine($"After reverse - " + reverse(str));
+    // }
 
     public static String reverse(String str)
     {
