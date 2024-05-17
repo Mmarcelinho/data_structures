@@ -2,7 +2,7 @@ namespace DataStructures.Exercises.Solutions;
 
     public class BinarySearch
     {
-        public static int Search(int[] nums, int target)
+        public static int search(int[] nums, int target)
         {
             int low = 0; // Inicializa o índice mais baixo do array
             int high = nums.Length - 1; // Inicializa o índice mais alto do array

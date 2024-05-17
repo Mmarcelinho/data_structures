@@ -2,14 +2,6 @@ namespace DataStructures.Exercises.MySolutions;
 
 public class BinarySearch
 {
-    static void Main()
-    {
-        int[] nums = { -1, 0, 3, 5, 9, 12 };
-        int target = 9;
-        var BinarySearch = new BinarySearch();
-        var result = BinarySearch.Search(nums, target);
-        Console.WriteLine(result);
-    }
     public int Search(int[] nums, int target)
     {
 

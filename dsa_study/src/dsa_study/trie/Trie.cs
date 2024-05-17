@@ -2,15 +2,15 @@ namespace dsa_study.trie;
 
 public class Trie
 {
-    static void Main()
-    {
-        Trie trie = new();
-        trie.insert("cat");
-        trie.insert("cab");
-        trie.insert("son");
-        trie.insert("so");
-        Console.WriteLine("Values inserted successfully");
-    }
+    // static void Main()
+    // {
+    //     Trie trie = new();
+    //     trie.insert("cat");
+    //     trie.insert("cab");
+    //     trie.insert("son");
+    //     trie.insert("so");
+    //     Console.WriteLine("Values inserted successfully");
+    // }
 
     // A raiz da Trie
     public TrieNode root;

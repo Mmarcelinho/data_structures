@@ -1,14 +1,10 @@
-using System;
-using System.Collections;
-using System.IO;
-
 namespace DataStructures.Exercises.Solutions;
 
 public class ThreeSum
 {
     public IList<List<int>> threeSum(int[] nums)
     {
-        IList<List<int>> resultado = new();
+        List<List<int>> resultado = [];
 
         int left, right;
 

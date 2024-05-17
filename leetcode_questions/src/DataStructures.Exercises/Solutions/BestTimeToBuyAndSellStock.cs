@@ -1,5 +1,5 @@
 namespace DataStructures.Exercises.Solutions;
-    public class StockAnalyzer
+    public class BestTimeToBuyAndSellStock
     {
         public int FindMaxProfit(int[] prices)
         {

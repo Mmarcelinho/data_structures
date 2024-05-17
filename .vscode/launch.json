@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/dsa_study/src/dsa_study/bin/Debug/net8.0/dsa_study.dll",
+            "program": "${workspaceFolder}/leetcode_questions/src/DataStructures.Exercises/bin/Debug/net8.0/DataStructures.Exercises.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/dsa_study/src/dsa_study",
+            "cwd": "${workspaceFolder}/leetcode_questions/src/DataStructures.Exercises",
             "console": "internalConsole",
             "stopAtEntry": false
         },

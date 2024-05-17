@@ -2,40 +2,44 @@ namespace DataStructures.Exercises.Solutions;
 
 public class RotateImage
 {
-    public void Rotate(int[][] matrix)
-    {
-        // Inicializando ponteiros
-        (int left, int right) = (0, matrix.Length - 3);
-
-        while (left < right)
+        public void Rotate(int[][] matrix)
         {
-            // Looping adicional com a diferença entre o right e o left para percorrer cada lado
-            var limit = right - left;
-            for (var i = 0; i < limit; i++)
+            // Define os limites esquerdo e direito da matriz
+            (int left, int right) = (0, matrix.Length - 1);
+
+            // Enquanto o limite esquerdo for menor que o direito
+            while (left < right)
             {
-                // top e bottom igual left e right
-                (int top, int bottom) = (left, right);
+                // Define o limite para a rotação
+                var limit = right - left;
+                // Para cada elemento dentro do limite
+                for (var i = 0; i < limit; i++)
+                {
+                    // Define os limites superior e inferior
+                    (int top, int bottom) = (left, right);
 
-                // Primeiro elemento a ser salvo é o do topo a esquerda
-                // Adicionando left+1 para após o looping o do topo a esquerda ser o valor ao lado
-                var topLeft = matrix[top][left + 1];
+                    // Salva o valor da posição superior esquerda
+                    var topLeft = matrix[top][left + i];
 
-                // Colocando o valor de bottom left na posição de top left
-                matrix[top][left + 1] = matrix[bottom + i];
+                    // Coloca o valor da posição inferior esquerda na posição superior esquerda
+                    matrix[top][left + i] = matrix[bottom - i][left];
 
-                // Colocando o valor de bottom right na posição de bottom left
-                matrix[bottom - i][left] = matrix[bottom][right - i];
+                    // Coloca o valor da posição inferior direita na posição inferior esquerda
+                    matrix[bottom - i][left] = matrix[bottom][right - i];
 
-                // Colocando o valor de top right na posição de bottom right
-                matrix[bottom][right - i] = matrix[top + 1][right];
+                    // Coloca o valor da posição superior direita na posição inferior direita
+                    matrix[bottom][right - i] = matrix[top + i][right];
 
-                // Colocando o valor salvo de top left na posição de top right
-                matrix[top + i][right] = topLeft;
+                    // Coloca o valor salvo da posição superior esquerda na posição superior direita
+                    matrix[top + i][right] = topLeft;
+                }
+
+                // Incrementa o limite esquerdo e decrementa o direito para a próxima iteração
+                left++;
+                right--;
             }
-            left++;
-            right--;
-        }
-        return;
-    }
 
-}
+            // Retorna do método
+            return;
+        }
+    }

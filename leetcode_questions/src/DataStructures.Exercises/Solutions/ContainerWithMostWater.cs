@@ -2,7 +2,7 @@ namespace DataStructures.Exercises.Solutions;
 
 public class ContainerWithMostWater
 {
-       public int MaxArea(int[] height)
+    public int MaxArea(int[] height)
     {
         // Inicializando a área máxima como zero.
         int maxArea = 0;

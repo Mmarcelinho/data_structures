@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Exercises", "DataStructures.Exercises\DataStructures.Exercises.csproj", "{EF700E3C-A670-49C4-8A0A-A29DDF1E2492}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dsa_study", "dsa_study", "{E0F5CCAE-E1A8-4D85-9FAD-4416F7F032FB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0E73A549-CC66-4A19-BC56-F1CB68EB751C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{74BD08E1-2986-42D2-8551-227C94FC3A29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Exercises.Tests", "Tests\DataStructures.Exercises.Tests\DataStructures.Exercises.Tests.csproj", "{93FD9590-FE35-4F4F-B981-2A824577EE44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dsa_study", "dsa_study\src\dsa_study\dsa_study.csproj", "{716DB336-335B-4EAC-B0C5-15963C2411E9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dsa_study", "dsa_study", "{4D093D4C-3F3A-49E8-9275-153DA0F7F38F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "leetcode_questions", "leetcode_questions", "{6F92DBCF-FC96-437E-87C6-C520C42DF968}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0F53B85D-BE10-4D70-A803-88413C480CFE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3EF34318-343F-4297-8846-D579593E2FAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dsa_study", "dsa_study\src\dsa_study\dsa_study.csproj", "{8D4A6C82-80FA-4624-89F0-70DD0C363164}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Exercises", "leetcode_questions\src\DataStructures.Exercises\DataStructures.Exercises.csproj", "{FE8FE72C-2AFE-4A4C-895C-FFC2A5072739}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,22 +24,19 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EF700E3C-A670-49C4-8A0A-A29DDF1E2492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF700E3C-A670-49C4-8A0A-A29DDF1E2492}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF700E3C-A670-49C4-8A0A-A29DDF1E2492}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF700E3C-A670-49C4-8A0A-A29DDF1E2492}.Release|Any CPU.Build.0 = Release|Any CPU
-		{93FD9590-FE35-4F4F-B981-2A824577EE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93FD9590-FE35-4F4F-B981-2A824577EE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93FD9590-FE35-4F4F-B981-2A824577EE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93FD9590-FE35-4F4F-B981-2A824577EE44}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D4A6C82-80FA-4624-89F0-70DD0C363164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D4A6C82-80FA-4624-89F0-70DD0C363164}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D4A6C82-80FA-4624-89F0-70DD0C363164}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D4A6C82-80FA-4624-89F0-70DD0C363164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716DB336-335B-4EAC-B0C5-15963C2411E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716DB336-335B-4EAC-B0C5-15963C2411E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716DB336-335B-4EAC-B0C5-15963C2411E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716DB336-335B-4EAC-B0C5-15963C2411E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE8FE72C-2AFE-4A4C-895C-FFC2A5072739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8FE72C-2AFE-4A4C-895C-FFC2A5072739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8FE72C-2AFE-4A4C-895C-FFC2A5072739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8FE72C-2AFE-4A4C-895C-FFC2A5072739}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{93FD9590-FE35-4F4F-B981-2A824577EE44} = {0E73A549-CC66-4A19-BC56-F1CB68EB751C}
-		{0F53B85D-BE10-4D70-A803-88413C480CFE} = {4D093D4C-3F3A-49E8-9275-153DA0F7F38F}
-		{8D4A6C82-80FA-4624-89F0-70DD0C363164} = {0F53B85D-BE10-4D70-A803-88413C480CFE}
+		{74BD08E1-2986-42D2-8551-227C94FC3A29} = {E0F5CCAE-E1A8-4D85-9FAD-4416F7F032FB}
+		{716DB336-335B-4EAC-B0C5-15963C2411E9} = {74BD08E1-2986-42D2-8551-227C94FC3A29}
+		{3EF34318-343F-4297-8846-D579593E2FAB} = {6F92DBCF-FC96-437E-87C6-C520C42DF968}
+		{FE8FE72C-2AFE-4A4C-895C-FFC2A5072739} = {3EF34318-343F-4297-8846-D579593E2FAB}
 	EndGlobalSection
 EndGlobal

@@ -1,7 +1,5 @@
-namespace HashingExample
-{
+namespace HashingExample;
 
-    // Definição da classe HashTable, que implementa uma tabela hash com encadeamento para resolver colisões.
     public class HashTable
     {
         // public static void Main(string[] args)
@@ -137,4 +135,4 @@ namespace HashingExample
             return head.Value;
         }
     }
-}
+
