@@ -2,15 +2,6 @@ namespace DataStructures.Exercises.Solutions;
 
 public class TrappingRainWater
 {
-    static void Main()
-    {
-        int[] height = [4,2,0,3,2,5];
-        Solution solution = new();
-        Solution2 solution2 = new();
-        Console.WriteLine(solution.Trap(height));
-        Console.WriteLine(solution2.Trap(height));
-    }
-
     public class Solution
     {
         public int Trap(int[] height)
