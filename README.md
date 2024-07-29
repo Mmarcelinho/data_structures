@@ -1,6 +1,6 @@
 ## Sobre o Projeto
 
-Este é um projeto de estudo sobre Estrutura de Dados e Algoritmos em C#. Ele abrange uma variedade de estruturas de dados e algoritmos, com exemplos de implementação e explicações do código. 
+Este é um projeto de estudo sobre Estrutura de Dados e Algoritmos em C# e Go. Ele abrange uma variedade de estruturas de dados e algoritmos, com exemplos de implementação e explicações do código. 
 
 ##  Referências
 
