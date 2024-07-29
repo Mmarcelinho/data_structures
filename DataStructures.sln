@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeetCode.Questions", "LeetCode.Questions", "{3196CDFD-2F49-4288-AB36-F0C2FC06298E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{788698D9-4EB8-4E18-8D71-BC53C1AF773A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercises", "LeetCode.Questions\src\Exercises\Exercises.csproj", "{B2B57CFC-7F51-40F8-B00B-5D8DC34257E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{2915F8AE-196B-4F6B-92EE-5B888772C680}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E3DF3719-BBB5-49D4-8552-F74E8ACFAABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dsa", "DataStructures\src\dsa\dsa.csproj", "{78D44595-E0B1-4341-A3F5-A1423EC152C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2B57CFC-7F51-40F8-B00B-5D8DC34257E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B57CFC-7F51-40F8-B00B-5D8DC34257E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B57CFC-7F51-40F8-B00B-5D8DC34257E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B57CFC-7F51-40F8-B00B-5D8DC34257E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78D44595-E0B1-4341-A3F5-A1423EC152C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D44595-E0B1-4341-A3F5-A1423EC152C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D44595-E0B1-4341-A3F5-A1423EC152C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D44595-E0B1-4341-A3F5-A1423EC152C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{788698D9-4EB8-4E18-8D71-BC53C1AF773A} = {3196CDFD-2F49-4288-AB36-F0C2FC06298E}
+		{B2B57CFC-7F51-40F8-B00B-5D8DC34257E9} = {788698D9-4EB8-4E18-8D71-BC53C1AF773A}
+		{E3DF3719-BBB5-49D4-8552-F74E8ACFAABC} = {2915F8AE-196B-4F6B-92EE-5B888772C680}
+		{78D44595-E0B1-4341-A3F5-A1423EC152C9} = {E3DF3719-BBB5-49D4-8552-F74E8ACFAABC}
+	EndGlobalSection
+EndGlobal
