@@ -1,27 +1,42 @@
 package main
 
 import (
-	circularlinkedlist "dsa/list/CircularLinkedList"
+	doublylinkedlist "dsa/list/DoublyLinkedList"
 	"fmt"
 )
 
 func main() {
-	cll := circularlinkedlist.NewCircularLinkedList()
+	dll := doublylinkedlist.NewDoublyLinkedList()
 
-	cll.CreateCircularLinkedList()
+	// Inserir elementos no fim da lista
+	dll.InsertEnd(1)
+	dll.InsertEnd(2)
+	dll.InsertEnd(3)
 
-	fmt.Println("Lista após criar a lista circularmente encadeada:")
-	cll.Display()
+	// Exibir a lista do início ao fim
+	fmt.Println("Displaying list forward:")
+	dll.DisplayForward()
 
-	cll.InsertFirst(20)
-	cll.InsertLast(25)
+	// Exibir a lista do fim ao início
+	fmt.Println("Displaying list backward:")
+	dll.DisplayBackward()
 
-	fmt.Println("\nLista após inserir nós no início e no final:")
-	cll.Display()
+	// Remover elementos do fim da lista
+	fmt.Println("Removing last element:")
+	dll.DeleteLast()
+	fmt.Println("Removing last element:")
+	dll.DeleteLast()
 
-	removedNode := cll.RemoveFirst()
-	fmt.Printf("\nNó removido: %d\n", removedNode.Data)
+	// Exibir a lista do início ao fim após remoções
+	fmt.Println("Displaying list forward after deletions:")
+	dll.DisplayForward()
 
-	fmt.Println("\nLista após remover o primeiro nó:")
-	cll.Display()
+	// Inserir elementos no início da lista
+	fmt.Println("Inserting elements at the beginning:")
+	dll.InsertFirst(4)
+	dll.InsertFirst(5)
+
+	// Exibir a lista do início ao fim após inserções
+	fmt.Println("Displaying list forward after insertions:")
+	dll.DisplayForward()
 }
