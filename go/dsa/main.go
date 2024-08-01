@@ -1,42 +1,116 @@
 package main
 
 import (
-	doublylinkedlist "dsa/list/DoublyLinkedList"
+	singlylinkedlist "dsa/list/SinglyLinkedList"
 	"fmt"
 )
 
 func main() {
-	dll := doublylinkedlist.NewDoublyLinkedList()
+	// Cria uma nova lista encadeada
+	list := &singlylinkedlist.SinglyLinkedList{}
 
-	// Inserir elementos no fim da lista
-	dll.InsertEnd(1)
-	dll.InsertEnd(2)
-	dll.InsertEnd(3)
+	// Insere elementos no início da lista
+	list.InsertFirst(10)
+	list.InsertFirst(20)
+	list.InsertFirst(30)
 
-	// Exibir a lista do início ao fim
-	fmt.Println("Displaying list forward:")
-	dll.DisplayForward()
+	// Exibe a lista
+	fmt.Println("Lista após inserir no início:")
+	list.Display()
 
-	// Exibir a lista do fim ao início
-	fmt.Println("Displaying list backward:")
-	dll.DisplayBackward()
+	// Insere um elemento no final da lista
+	list.InsertLast(5)
+	fmt.Println("Lista após inserir no final:")
+	list.Display()
 
-	// Remover elementos do fim da lista
-	fmt.Println("Removing last element:")
-	dll.DeleteLast()
-	fmt.Println("Removing last element:")
-	dll.DeleteLast()
+	// Insere um elemento na segunda posição
+	list.Insert(2, 25)
+	fmt.Println("Lista após inserir na segunda posição:")
+	list.Display()
 
-	// Exibir a lista do início ao fim após remoções
-	fmt.Println("Displaying list forward after deletions:")
-	dll.DisplayForward()
+	// Verifica o comprimento da lista
+	fmt.Printf("Comprimento da lista: %d\n", list.Length())
 
-	// Inserir elementos no início da lista
-	fmt.Println("Inserting elements at the beginning:")
-	dll.InsertFirst(4)
-	dll.InsertFirst(5)
+	// Remove o primeiro elemento
+	list.DeleteFirst()
+	fmt.Println("Lista após remover o primeiro elemento:")
+	list.Display()
 
-	// Exibir a lista do início ao fim após inserções
-	fmt.Println("Displaying list forward after insertions:")
-	dll.DisplayForward()
+	// Remove o último elemento
+	list.DeleteLast()
+	fmt.Println("Lista após remover o último elemento:")
+	list.Display()
+
+	// Remove o segundo elemento
+	list.Delete(2)
+	fmt.Println("Lista após remover o segundo elemento:")
+	list.Display()
+
+	// Verifica se a lista contém um determinado valor
+	searchKey := 25
+	found := list.Find(searchKey)
+	fmt.Printf("Elemento %d encontrado? %v\n", searchKey, found)
+
+	// Insere elementos de forma ordenada
+	list.InsertInSortedList(15)
+	list.InsertInSortedList(35)
+	fmt.Println("Lista após inserir elementos de forma ordenada:")
+	list.Display()
+
+	// Reverte a lista
+	list.Reverse()
+	fmt.Println("Lista após reverter:")
+	list.Display()
+
+	// Obtém o nó do meio da lista
+	middleNode := list.GetMiddleNode()
+	if middleNode != nil {
+		fmt.Printf("O nó do meio tem o valor: %d\n", middleNode.Data)
+	} else {
+		fmt.Println("A lista está vazia.")
+	}
+
+	// Obtém o segundo nó a partir do final
+	nthNode, err := list.GetNthNodeFromEnd(2)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Printf("O segundo nó a partir do final tem o valor: %d\n", nthNode.Data)
+	}
+
+	// Cria um loop na lista para fins de teste
+	list.CreateALoopInLinkedList()
+
+	// Verifica se a lista contém um loop
+	if list.ContainsLoop() {
+		fmt.Println("A lista contém um loop.")
+		list.RemoveLoop()
+		fmt.Println("Loop removido.")
+	} else {
+		fmt.Println("A lista não contém um loop.")
+	}
+
+	// Exibe a lista após remover o loop
+	fmt.Println("Lista após remover o loop:")
+	list.Display()
+
+	// Mescla duas listas encadeadas ordenadas
+	list1 := &singlylinkedlist.SinglyLinkedList{}
+	list1.InsertInSortedList(10)
+	list1.InsertInSortedList(20)
+	list1.InsertInSortedList(30)
+
+	list2 := &singlylinkedlist.SinglyLinkedList{}
+	list2.InsertInSortedList(15)
+	list2.InsertInSortedList(25)
+	list2.InsertInSortedList(35)
+
+	mergedList := singlylinkedlist.Merge(list1.Head, list2.Head)
+	fmt.Println("Lista após mesclar duas listas ordenadas:")
+	current := mergedList
+	for current != nil {
+		fmt.Printf("%d --> ", current.Data)
+		current = current.Next
+	}
+	fmt.Println("null")
 }
