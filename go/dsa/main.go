@@ -7,12 +7,11 @@ import (
 func main() {
 
 	matrix := [][]int{
-		{10, 20, 30, 40},
-		{15, 25, 35, 45},
-		{27, 29, 37, 48},
-		{32, 33, 39, 51},
+		{1, 2, 3, 4},
+		{5, 6, 7, 8},
+		{9, 10, 11, 12},
+		{13, 14, 15, 16},
 	}
 
-	s.Search(matrix, len(matrix), 32)
-	s.Search(matrix, len(matrix), 100)
+	s.SpiralPrint(matrix, len(matrix), len(matrix[0]))
 }
