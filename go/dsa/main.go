@@ -1,15 +1,18 @@
 package main
 
 import (
-	r "dsa/mathematics"
+	s "dsa/matrix"
 )
 
 func main() {
-	arr := []int{3, 2, 4, 7, 10, 6, 5}
 
-	r.PrintArray(arr)
+	matrix := [][]int{
+		{10, 20, 30, 40},
+		{15, 25, 35, 45},
+		{27, 29, 37, 48},
+		{32, 33, 39, 51},
+	}
 
-	result := r.RemoveEven(arr)
-
-	r.PrintArray(result)
+	s.Search(matrix, len(matrix), 32)
+	s.Search(matrix, len(matrix), 100)
 }
