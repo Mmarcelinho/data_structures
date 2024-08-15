@@ -1,17 +1,20 @@
 package main
 
 import (
-	s "dsa/matrix"
+	queue "dsa/queue"
 )
 
 func main() {
+	queue := queue.NewQueue()
+	
+	queue.Enqueue(10)
+	queue.Enqueue(15)
+	queue.Enqueue(20)
 
-	matrix := [][]int{
-		{1, 2, 3, 4},
-		{5, 6, 7, 8},
-		{9, 10, 11, 12},
-		{13, 14, 15, 16},
-	}
+	queue.Print()
 
-	s.SpiralPrint(matrix, len(matrix), len(matrix[0]))
+	queue.Dequeue()
+	queue.Dequeue()
+
+	queue.Print()
 }
