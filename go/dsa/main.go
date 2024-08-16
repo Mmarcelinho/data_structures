@@ -1,20 +1,18 @@
 package main
 
 import (
-	queue "dsa/queue"
+	b "dsa/binarysearch"
+	"fmt"
 )
 
 func main() {
-	queue := queue.NewQueue()
-	
-	queue.Enqueue(10)
-	queue.Enqueue(15)
-	queue.Enqueue(20)
+	nums := []int{1, 10, 20, 47, 59, 65, 75, 88, 99}
 
-	queue.Print()
+	result := b.BS(nums, 59)
 
-	queue.Dequeue()
-	queue.Dequeue()
+	if result == -1 {
+		print("value not found.")
+	}
 
-	queue.Print()
+	fmt.Printf("%v", result)
 }
