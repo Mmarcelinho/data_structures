@@ -1,4 +1,4 @@
-package binarysearch
+package search
 
 // BS realiza uma busca binária em uma slice de inteiros ordenada.
 // Se o elemento for encontrado, retorna o índice onde ele está localizado.
