@@ -1,13 +1,13 @@
 package main
 
 import (
-	b "dsa/sorting/BubbleSort"
+	i "dsa/sorting/InsertionSort"
 )
 
 func main() {
-	arr := []int{15, 1, 2, 9, 10}
+	arr := []int{5, 4, 3, 2, 9, 10}
 
-	b.PrintArray(arr)
-	b.Sort(arr)
-	b.PrintArray(arr)
+	i.PrintArray(arr)
+	i.Sort(arr)
+	i.PrintArray(arr)
 }
