@@ -1,19 +1,13 @@
 package main
 
 import (
-	s "dsa/search"
-	"fmt"
+	b "dsa/sorting/BubbleSort"
 )
 
 func main() {
-	nums := []int{1, 10, 20, 47, 59, 65, 75, 88, 99}
+	arr := []int{15, 1, 2, 9, 10}
 
-	result, err := s.Search(nums, 75)
-
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	fmt.Printf("%v", result)
+	b.PrintArray(arr)
+	b.Sort(arr)
+	b.PrintArray(arr)
 }
