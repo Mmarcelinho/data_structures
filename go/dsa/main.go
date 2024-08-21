@@ -1,13 +1,14 @@
 package main
 
 import (
-	i "dsa/sorting/InsertionSort"
+	m "dsa/sorting/MergeSort"
 )
 
 func main() {
-	arr := []int{5, 4, 3, 2, 9, 10}
+	arr := []int{9, 5, 2, 4, 3, -1}
+	tempArr := make([]int, len(arr))
 
-	i.PrintArray(arr)
-	i.Sort(arr)
-	i.PrintArray(arr)
+	m.PrintArray(arr)
+	m.Sort(arr, tempArr, 0, len(arr)-1)
+	m.PrintArray(arr)
 }
