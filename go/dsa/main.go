@@ -1,13 +1,13 @@
 package main
 
 import (
-	s "dsa/sorting/SelectionSort"
+	s "dsa/sorting/Sort012"
 )
 
 func main() {
-	arr := []int{5, 1, 2, 9, 16}
+	arr := []int{ 2, 0, 0, 1, 0, 2, 0, 1, 0, 2, 2, 0 }
 
 	s.PrintArray(arr)
-	s.Sort(arr)
+	s.ThreeNumberSort(arr)
 	s.PrintArray(arr)
 }
