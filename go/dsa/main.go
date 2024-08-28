@@ -1,52 +1,40 @@
 package main
 
 import (
-	s "dsa/stack/impl/Array"
+	s "dsa/stack/impl/List"
 	"fmt"
 )
 
 func main() {
-	stack := s.NewDefaultStack()
 
-	if err := stack.Push(10); err != nil {
-		fmt.Println(err)
-	}
-	if err := stack.Push(15); err != nil {
-		fmt.Println(err)
-	}
-	if err := stack.Push(20); err != nil {
-		fmt.Println(err)
-	}
+	// Cria uma nova pilha com o tamanho inicial padrão.
+	s := s.NewStack()
 
-	if val, err := stack.Peek(); err != nil {
-		fmt.Println(err)
-	} else {
-		fmt.Println(val)
-	}
-	if _, err := stack.Pop(); err != nil {
-		fmt.Println(err)
-	}
+	// Adiciona elementos à pilha.
+	s.Push(10)
+	s.Push(15)
+	s.Push(20)
 
-	if val, err := stack.Peek(); err != nil {
-		fmt.Println(err)
-	} else {
-		fmt.Println(val)
+	// Mostra o topo da pilha e remove o elemento do topo.
+	if value, err := s.Peek(); err == nil {
+		fmt.Println("Topo da pilha:", value) // Esperado: 20
 	}
-	if _, err := stack.Pop(); err != nil {
-		fmt.Println(err)
-	}
+	s.Pop()
 
-	if val, err := stack.Peek(); err != nil {
-		fmt.Println(err)
-	} else {
-		fmt.Println(val)
+	// Mostra o novo topo da pilha e remove o elemento do topo.
+	if value, err := s.Peek(); err == nil {
+		fmt.Println("Novo topo da pilha:", value) // Esperado: 15
 	}
-	if _, err := stack.Pop(); err != nil {
-		fmt.Println(err)
-	}
+	s.Pop()
 
-	// Tentando remover um elemento de uma pilha vazia, o que causará um erro.
-	if _, err := stack.Pop(); err != nil {
-		fmt.Println(err)
+	// Mostra o topo da pilha e remove o elemento do topo.
+	if value, err := s.Peek(); err == nil {
+		fmt.Println("Topo da pilha após remoção:", value) // Esperado: 10
+	}
+	s.Pop()
+
+	// Tenta remover um elemento de uma pilha vazia, o que causará um erro.
+	if _, err := s.Pop(); err != nil {
+		fmt.Println("Erro:", err) // Esperado: stack is empty
 	}
 }
