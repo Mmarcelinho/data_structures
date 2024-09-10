@@ -2,42 +2,36 @@ package selectionsort
 
 import "fmt"
 
-// PrintArray exibe os elementos do array na tela.
-// Utiliza um loop para iterar sobre cada elemento e imprimi-lo.
-// Complexidade de tempo: O(n), onde n é o número de elementos no array.
+// PrintArray imprime os elementos do array em uma única linha.
 func PrintArray(arr []int) {
-	for _, v := range arr {
-		fmt.Printf("%d ", v)
+	for _, v := range arr { // Itera sobre cada elemento do array
+		fmt.Printf("%d ", v) // Imprime o valor atual com um espaço
 	}
-	fmt.Println()
+	fmt.Println() // Quebra de linha após imprimir todos os elementos
 }
 
-// Sort implementa o algoritmo de ordenação por seleção (Selection Sort).
-// O Selection Sort percorre o array várias vezes, selecionando o menor elemento
-// e trocando-o com o elemento no início da parte não ordenada do array.
-// Complexidade de tempo: O(n^2), onde n é o número de elementos no array.
-// Isso ocorre porque o algoritmo tem dois loops aninhados: o primeiro percorre 
-// todos os elementos (O(n)) e o segundo percorre os elementos restantes para 
-// encontrar o menor (também O(n)).
+// Sort realiza o algoritmo de ordenação Selection Sort em um array.
 func Sort(arr []int) {
-	n := len(arr) // Armazena o comprimento do array
+	n := len(arr) // Obtém o tamanho do array
 
-	// Loop principal para mover a fronteira do subarray não ordenado
+	// Laço externo que percorre o array até o penúltimo elemento
 	for i := 0; i < n-1; i++ {
-		// Assume que o primeiro elemento não ordenado é o menor
-		min := i
 
-		// Loop para encontrar o menor elemento na parte não ordenada
+		min := i // Assume que o índice atual é o menor
+
+		// Laço interno que percorre os elementos restantes
 		for j := i + 1; j < n; j++ {
-			// Se encontrar um elemento menor, atualiza o índice do menor elemento
+
+			// Se encontrar um valor menor que o valor atual mínimo,
+			// atualiza o índice do menor valor.
 			if arr[j] < arr[min] {
 				min = j
 			}
 		}
 
-		// Troca o menor elemento encontrado com o primeiro elemento não ordenado
-		temp := arr[min]
-		arr[min] = arr[i]
-		arr[i] = temp
+		// Troca o menor valor encontrado com o valor da posição inicial do laço externo
+		temp := arr[min]  // Armazena o menor valor temporariamente
+		arr[min] = arr[i] // Move o valor da posição inicial para a posição do menor valor
+		arr[i] = temp     // Coloca o menor valor na posição inicial
 	}
 }

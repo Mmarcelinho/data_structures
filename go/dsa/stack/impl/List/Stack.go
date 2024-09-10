@@ -4,76 +4,80 @@ import (
 	"errors"
 )
 
-// ListNode representa um nó em uma lista encadeada.
+// ListNode representa um nó da lista encadeada usada para a pilha.
 type ListNode struct {
-	data int        // Valor armazenado no nó.
-	next *ListNode  // Ponteiro para o próximo nó na lista.
+	data int       // Dado armazenado no nó
+	next *ListNode // Ponteiro para o próximo nó na pilha
 }
 
-// Stack representa uma pilha usando uma lista encadeada.
+// Stack representa a estrutura de uma pilha, implementada com uma lista encadeada.
 type Stack struct {
-	top    *ListNode // Ponteiro para o topo da pilha.
-	length int       // Número de elementos na pilha.
+	top    *ListNode // Ponteiro para o nó no topo da pilha
+	length int       // Quantidade de elementos na pilha
 }
 
-// NewStack cria uma nova pilha com o topo inicializado como nil e comprimento 0.
-// Complexidade: O(1), pois apenas inicializa as propriedades.
+// NewStack cria e retorna uma nova pilha vazia.
 func NewStack() *Stack {
 	return &Stack{
-		top:    nil,
-		length: 0,
+		top:    nil,  // Inicialmente, o topo é nil, indicando que a pilha está vazia
+		length: 0,    // A pilha começa com comprimento 0
 	}
 }
 
 // Length retorna o número de elementos na pilha.
-// Complexidade: O(1), pois apenas retorna o valor armazenado em length.
 func (s *Stack) Length() int {
-	return s.length
+	return s.length // Retorna o valor da variável length que mantém o tamanho da pilha
 }
 
 // IsEmpty verifica se a pilha está vazia.
-// Complexidade: O(1), pois apenas compara length com 0.
 func (s *Stack) IsEmpty() bool {
-	return s.length == 0
+	return s.length == 0 // Se length for 0, a pilha está vazia
 }
 
-// Push adiciona um novo elemento ao topo da pilha.
-// Complexidade: O(1), pois cria um novo nó e o adiciona ao topo.
+// Push insere um novo elemento no topo da pilha.
 func (s *Stack) Push(data int) {
-	// Cria um novo nó com o valor de data.
+	// Cria um novo nó com o dado fornecido
 	newNode := &ListNode{data: data}
-	// O novo nó aponta para o nó atual no topo da pilha.
+
+	// O próximo do novo nó passa a ser o nó atual do topo
 	newNode.next = s.top
-	// O novo nó se torna o topo da pilha.
+
+	// Atualiza o topo para o novo nó
 	s.top = newNode
-	// Incrementa o tamanho da pilha.
+
+	// Incrementa o comprimento da pilha
 	s.length++
 }
 
 // Pop remove e retorna o elemento do topo da pilha.
-// Complexidade: O(1), pois remove o nó do topo e ajusta o ponteiro.
 func (s *Stack) Pop() (int, error) {
-	// Se a pilha estiver vazia, retorna um erro.
+
+	// Verifica se a pilha está vazia antes de tentar remover
 	if s.IsEmpty() {
-		return 0, errors.New("stack is empty")
+		return 0, errors.New("stack is empty") // Retorna um erro se a pilha estiver vazia
 	}
-	// Armazena o valor do nó do topo.
+
+	// Obtém o valor do topo
 	result := s.top.data
-	// Move o topo para o próximo nó na pilha.
+
+	// Atualiza o topo para o próximo nó
 	s.top = s.top.next
-	// Decrementa o tamanho da pilha.
+
+	// Decrementa o comprimento da pilha
 	s.length--
-	// Retorna o valor do nó removido.
+
+	// Retorna o valor removido
 	return result, nil
 }
 
-// Peek retorna o valor do elemento do topo da pilha sem removê-lo.
-// Complexidade: O(1), pois apenas retorna o valor do nó do topo.
+// Peek retorna o valor do topo da pilha sem removê-lo.
 func (s *Stack) Peek() (int, error) {
-	// Se a pilha estiver vazia, retorna um erro.
+
+	// Verifica se a pilha está vazia antes de tentar acessar o topo
 	if s.IsEmpty() {
-		return 0, errors.New("stack is empty")
+		return 0, errors.New("stack is empty") // Retorna um erro se a pilha estiver vazia
 	}
-	// Retorna o valor do nó do topo.
+
+	// Retorna o valor armazenado no topo da pilha
 	return s.top.data, nil
 }
