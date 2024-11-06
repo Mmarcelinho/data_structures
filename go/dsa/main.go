@@ -1,12 +1,12 @@
 package main
 
 import (
-	s "dsa/stack/StringReverse"
+	s "dsa/string"
 	"fmt"
 )
 
 func main() {
-	str := "ABCD"
-	fmt.Printf("Before reverse - %s\n", str)
-	fmt.Printf("After reverse  - %s\n", s.Reverse(str))
+	fmt.Println(s.FirstNonRepeatingCharacter("abafbabe"))
+    fmt.Println(s.IsSubsequence("abcde", "ace"))
+    fmt.Println(s.RemoveVowels("hello world"))
 }
