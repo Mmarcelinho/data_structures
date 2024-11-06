@@ -1,12 +1,22 @@
 package main
 
 import (
-	s "dsa/string"
+	t "dsa/tree/BinarySearchTree"
 	"fmt"
 )
 
 func main() {
-	fmt.Println(s.FirstNonRepeatingCharacter("abafbabe"))
-    fmt.Println(s.IsSubsequence("abcde", "ace"))
-    fmt.Println(s.RemoveVowels("hello world"))
+	bst := t.NewBinarySearchTree()
+    bst.Insert(5)
+    bst.Insert(3)
+    bst.Insert(7)
+    bst.Insert(1)
+
+    bst.InOrder()
+
+    if bst.Search(10) != nil {
+        fmt.Println("Key found")
+    } else {
+        fmt.Println("Key not found")
+    }
 }
