@@ -1,32 +1,28 @@
 package main
 
 import (
-    b "dsa/tree/BinaryTree"
-    "fmt"
+	t "dsa/trie"
+	"fmt"
 )
 
 func main() {
-    bt := b.NewBinaryTree()
-    bt.CreateBinaryTree()
+	t := t.NewTrie()
 
-    fmt.Println("Pré-ordem (recursivo):")
-    bt.PreOrder(bt.Root)
-    fmt.Println("\nPré-ordem (iterativo):")
-    bt.PreOrderIterative()
+	words := []string{"cat", "cab", "son", "so"}
+	for _, word := range words {
+		err := t.Insert(word)
+		if err != nil {
+			fmt.Println("Erro ao inserir palavra:", err)
+		}
+	}
 
-    fmt.Println("\n\nIn-ordem (recursivo):")
-    bt.InOrder(bt.Root)
-    fmt.Println("\nIn-ordem (iterativo):")
-    bt.InOrderIterative()
+	fmt.Println("Palavras inseridas com sucesso")
 
-    fmt.Println("\n\nPós-ordem (recursivo):")
-    bt.PostOrder(bt.Root)
-    fmt.Println("\nPós-ordem (iterativo):")
-    bt.PostOrderIterative()
-
-    fmt.Println("\n\nOrdem por nível:")
-    bt.LevelOrder()
-
-    fmt.Println("\n\nValor máximo na árvore:")
-    fmt.Println(bt.FindMax(bt.Root))
+	// Exemplo de busca
+	searchWord := "cat"
+	if t.Search(searchWord) {
+		fmt.Printf("A palavra '%s' foi encontrada na Trie.\n", searchWord)
+	} else {
+		fmt.Printf("A palavra '%s' não foi encontrada na Trie.\n", searchWord)
+	}
 }
