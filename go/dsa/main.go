@@ -1,22 +1,32 @@
 package main
 
 import (
-	t "dsa/tree/BinarySearchTree"
-	"fmt"
+    b "dsa/tree/BinaryTree"
+    "fmt"
 )
 
 func main() {
-	bst := t.NewBinarySearchTree()
-    bst.Insert(5)
-    bst.Insert(3)
-    bst.Insert(7)
-    bst.Insert(1)
+    bt := b.NewBinaryTree()
+    bt.CreateBinaryTree()
 
-    bst.InOrder()
+    fmt.Println("Pré-ordem (recursivo):")
+    bt.PreOrder(bt.Root)
+    fmt.Println("\nPré-ordem (iterativo):")
+    bt.PreOrderIterative()
 
-    if bst.Search(10) != nil {
-        fmt.Println("Key found")
-    } else {
-        fmt.Println("Key not found")
-    }
+    fmt.Println("\n\nIn-ordem (recursivo):")
+    bt.InOrder(bt.Root)
+    fmt.Println("\nIn-ordem (iterativo):")
+    bt.InOrderIterative()
+
+    fmt.Println("\n\nPós-ordem (recursivo):")
+    bt.PostOrder(bt.Root)
+    fmt.Println("\nPós-ordem (iterativo):")
+    bt.PostOrderIterative()
+
+    fmt.Println("\n\nOrdem por nível:")
+    bt.LevelOrder()
+
+    fmt.Println("\n\nValor máximo na árvore:")
+    fmt.Println(bt.FindMax(bt.Root))
 }
